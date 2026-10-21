@@ -411,6 +411,77 @@ a {
   color: var(--matcha-deepest);
 }
 
+/* ---------- Natural Goodness ---------- */
+
+.goodness__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.goodness__intro {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--space-5);
+}
+
+.goodness__subtitle {
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.goodness__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.goodness__card {
+  text-align: center;
+  padding: var(--space-3);
+}
+
+.goodness__mark {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: var(--space-2);
+}
+
+.goodness__title {
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  color: var(--matcha-deepest);
+  margin-bottom: var(--space-1);
+}
+
+.goodness__body {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.goodness__note {
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  margin-top: var(--space-5);
+}
+
+@media (min-width: 720px) {
+  .goodness__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
