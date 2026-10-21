@@ -3,3 +3,4 @@ Thumbs.db
 .vercel
 .netlify
 .agents
+node_modules

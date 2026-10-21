@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chrome-remote-interface": "^0.34.0",
+    "jsqr": "^1.4.0",
+    "pdf-parse": "^2.4.5",
+    "pngjs": "^7.0.0"
+  }
+}
