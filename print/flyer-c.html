@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>WAKA MATCHA — Event Flyer (Version C — Full Letter Flyer)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #000000;
+    --serif-display: "Cormorant Garamond", "Times New Roman", serif;
+    --serif-body: "EB Garamond", "Times New Roman", serif;
+    --serif-jp: "Noto Serif JP", serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  html, body {
+    width: 8.5in;
+    height: 11in;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: var(--serif-body);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sheet {
+    width: 8.5in;
+    height: 11in;
+    position: relative;
+  }
+
+  .panel {
+    width: 8.5in;
+    height: 11in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .frame {
+    position: absolute;
+    top: 0.65in;
+    left: 0.7in;
+    right: 0.7in;
+    bottom: 0.65in;
+    border: 1px solid var(--ink);
+  }
+
+  .frame::after {
+    content: "";
+    position: absolute;
+    inset: 7pt;
+    border: 0.5pt solid var(--ink);
+  }
+
+  .motif {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 4in;
+    height: 4in;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .motif svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .motif path,
+  .motif ellipse,
+  .motif line {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 0.6;
+    stroke-linecap: round;
+    opacity: 0.09;
+  }
+
+  .panel__inner {
+    width: 100%;
+    max-width: 5.6in;
+    padding: 0 0.4in;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .kanji-mark {
+    font-family: var(--serif-jp);
+    font-size: 21pt;
+    letter-spacing: 0.1em;
+    margin-bottom: 12pt;
+  }
+
+  .eyebrow {
+    font-size: 10.5pt;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    margin-bottom: 14pt;
+  }
+
+  .headline {
+    font-family: var(--serif-display);
+    font-weight: 500;
+    font-size: 50pt;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    margin-bottom: 12pt;
+  }
+
+  .subheading {
+    font-family: var(--serif-display);
+    font-style: italic;
+    font-size: 17pt;
+    margin-bottom: 16pt;
+  }
+
+  .ornament {
+    font-size: 12pt;
+    margin-bottom: 12pt;
+    letter-spacing: 0.5em;
+  }
+
+  .supporting {
+    font-size: 12.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16pt;
+  }
+
+  .body-copy {
+    font-size: 13pt;
+    line-height: 1.6;
+    max-width: 4.9in;
+    margin: 0 auto 28pt;
+  }
+
+  .qr-block {
+    margin: 0 auto 14pt;
+  }
+
+  .qr-block img {
+    width: 1.8in;
+    height: 1.8in;
+    display: block;
+    margin: 0 auto 12pt;
+  }
+
+  .qr-caption {
+    font-size: 11pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .footer-details {
+    margin-top: 20pt;
+    padding-top: 14pt;
+    border-top: 1px solid var(--ink);
+    font-size: 9.5pt;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+  }
+
+  .footer-details .line1 { margin-bottom: 2pt; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <section class="panel">
+      <div class="frame"></div>
+      <div class="motif" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <line x1="150" y1="16" x2="150" y2="95" />
+          <path d="M150,95 L113,158" />
+          <path d="M150,95 L122,162" />
+          <path d="M150,95 L131,166" />
+          <path d="M150,95 L140,168" />
+          <path d="M150,95 L150,169" />
+          <path d="M150,95 L160,168" />
+          <path d="M150,95 L169,166" />
+          <path d="M150,95 L178,162" />
+          <path d="M150,95 L187,158" />
+          <ellipse cx="150" cy="123" rx="82" ry="15" />
+          <path d="M68,123 C68,176 95,238 150,238 C205,238 232,176 232,123" />
+          <ellipse cx="150" cy="239" rx="20" ry="5" />
+        </svg>
+      </div>
+      <div class="panel__inner">
+        <p class="kanji-mark">和</p>
+        <p class="eyebrow">Est. Japan</p>
+        <h1 class="headline">WAKA MATCHA</h1>
+        <p class="subheading">A Rare Expression of Japanese Matcha</p>
+        <p class="ornament">◆</p>
+        <p class="supporting">Rooted in Nara. Refined by Tradition.</p>
+        <p class="body-copy">
+          Grown in Nara's historic Yamato tea region and traditionally stone-milled, WAKA MATCHA
+          reflects generations of Japanese craftsmanship. Available exclusively through private
+          inquiry — a quiet rarity, reserved for those who seek it.
+        </p>
+        <div class="qr-block">
+          <img src="qr-code.svg" alt="QR code linking to waka-matcha.netlify.app" />
+          <p class="qr-caption">Scan to Explore &amp; Purchase</p>
+        </div>
+        <div class="footer-details">
+          <p class="line1">Private purchase inquiries via SHOWCASE TOKYO</p>
+          <p class="line1">showcase.tokyo.la@gmail.com</p>
+          <p>waka-matcha.netlify.app</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

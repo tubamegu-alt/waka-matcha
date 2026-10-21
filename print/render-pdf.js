@@ -90,6 +90,7 @@ async function main() {
     await waitForCDP();
     await renderOne('flyer-a.html', 'WAKA-MATCHA-Flyer-A-Minimal.pdf', 'WAKA-MATCHA-Flyer-A-Minimal-300dpi.png');
     await renderOne('flyer-b.html', 'WAKA-MATCHA-Flyer-B-Framed.pdf', 'WAKA-MATCHA-Flyer-B-Framed-300dpi.png');
+    await renderOne('flyer-c.html', 'WAKA-MATCHA-Flyer-C-FullPage.pdf', 'WAKA-MATCHA-Flyer-C-FullPage-300dpi.png');
   } finally {
     chromeProc.kill();
   }
