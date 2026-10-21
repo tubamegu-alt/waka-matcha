@@ -124,6 +124,25 @@ a {
   padding: 0 1.5rem;
 }
 
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+  mix-blend-mode: luminosity;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(85% 70% at 50% 42%, rgba(16, 25, 15, 0.72) 0%, rgba(20, 31, 17, 0.85) 60%, var(--matcha-deepest) 100%);
+}
+
 .hero__texture {
   position: absolute;
   inset: 0;
@@ -132,6 +151,7 @@ a {
   justify-content: center;
   opacity: 0.5;
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero__motif {
@@ -261,7 +281,24 @@ a {
 }
 
 .section--dark {
+  position: relative;
   background: linear-gradient(160deg, var(--matcha-deep), var(--matcha-deepest));
+  overflow: hidden;
+}
+
+.section--dark__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.16;
+  mix-blend-mode: luminosity;
+}
+
+.section--dark .section__inner {
+  position: relative;
+  z-index: 1;
 }
 
 .section__inner {
@@ -282,6 +319,15 @@ a {
   display: flex;
   justify-content: center;
   padding: var(--space-3);
+}
+
+.section__photo {
+  width: min(80vw, 420px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid rgba(185, 151, 90, 0.4);
+  outline: 1px solid rgba(185, 151, 90, 0.15);
+  outline-offset: 6px;
 }
 
 .motif-art {

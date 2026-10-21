@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>WAKA MATCHA — A Rare Expression of Japanese Matcha</title>
 <meta name="description" content="WAKA MATCHA embodies the quality, refinement, and quiet elegance of Japan's tea traditions. Available through private inquiry." />
+<meta property="og:title" content="WAKA MATCHA — A Rare Expression of Japanese Matcha" />
+<meta property="og:description" content="Tradition, refined. Elegance in every bowl. Available through private inquiry." />
+<meta property="og:image" content="images/exclusive-bowl.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -24,6 +29,15 @@
 
   <!-- SECTION 1 — HERO -->
   <section class="hero" id="top">
+    <img
+      src="images/hero-texture-mobile.jpg"
+      srcset="images/hero-texture-mobile.jpg 900w, images/hero-texture.jpg 2000w"
+      sizes="100vw"
+      alt=""
+      aria-hidden="true"
+      fetchpriority="high"
+      class="hero__photo"
+    />
     <div class="hero__texture" aria-hidden="true">
       <svg viewBox="0 0 400 400" class="hero__motif" aria-hidden="true">
         <circle cx="200" cy="200" r="150" />
@@ -43,12 +57,15 @@
   <!-- SECTION 2 — OUR HERITAGE -->
   <section class="section section--ivory" id="heritage">
     <div class="section__inner">
-      <div class="section__media reveal" aria-hidden="true">
-        <svg viewBox="0 0 300 300" class="motif-art">
-          <circle cx="150" cy="150" r="95" class="motif-art__ring" />
-          <path d="M 70 150 Q 150 100 230 150" class="motif-art__line" />
-          <path d="M 70 160 Q 150 115 230 160" class="motif-art__line motif-art__line--soft" />
-        </svg>
+      <div class="section__media reveal">
+        <img
+          src="images/heritage-whisking-mobile.jpg"
+          srcset="images/heritage-whisking-mobile.jpg 900w, images/heritage-whisking.jpg 1800w"
+          sizes="(min-width: 720px) 45vw, 85vw"
+          alt="Matcha being whisked by hand in a rustic ceramic bowl"
+          loading="lazy"
+          class="section__photo"
+        />
       </div>
       <div class="section__text reveal">
         <p class="eyebrow">Our Heritage</p>
@@ -81,17 +98,28 @@
           experience a moment of quiet refinement.
         </p>
       </div>
-      <div class="section__media reveal" aria-hidden="true">
-        <svg viewBox="0 0 300 300" class="motif-art">
-          <path d="M150 60 C110 90 95 140 110 190 C120 225 150 245 150 245 C150 245 180 225 190 190 C205 140 190 90 150 60 Z" class="motif-art__ring" />
-          <line x1="150" y1="60" x2="150" y2="245" class="motif-art__line motif-art__line--soft" />
-        </svg>
+      <div class="section__media reveal">
+        <img
+          src="images/ritual-flatlay-mobile.jpg"
+          srcset="images/ritual-flatlay-mobile.jpg 900w, images/ritual-flatlay.jpg 1800w"
+          sizes="(min-width: 720px) 45vw, 85vw"
+          alt="A bamboo whisk, matcha powder, and whisked tea arranged on a tray"
+          loading="lazy"
+          class="section__photo"
+        />
       </div>
     </div>
   </section>
 
   <!-- SECTION 4 — EXCLUSIVE ACCESS -->
   <section class="section section--dark" id="inquiry">
+    <img
+      src="images/exclusive-bowl.jpg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      class="section--dark__photo"
+    />
     <div class="section__inner section__inner--center reveal">
       <p class="eyebrow eyebrow--light">Exclusive Access</p>
       <h2 class="section__title section__title--light">An Exclusive Invitation</h2>
